@@ -1,0 +1,23 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.cont-img{
+	column-width: 250px;
+  	column-gap: 5px;
+  	padding: 0 5px;
+  	font-size: 0;
+}
+.item-pint{
+	position: relative;
+    display: inline-block;
+    width: 100%; 
+    height: auto;
+    margin: 0 0 5px 0;
+	img{
+		width: 100%;
+	}
+	h1{
+		font-size: 12px;
+	}
+}
