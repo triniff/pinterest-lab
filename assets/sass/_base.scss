@@ -3,6 +3,7 @@ body{
 	padding: 0;
 	color: $color-text;
 }
+/*Nav*/
 .navbar-default{
 	background-color: $color-blanco;
 	border-radius: 0;
@@ -14,10 +15,97 @@ body{
 	.inicio{
 		font-weight: bold;
 	}
+		li a{
+			padding: 8px 10px 4px;
+		}
+		.icons-nav{
+			img{
+				width: 25px;
+				border-radius: 100%;
+			}
+			.fa-commenting{
+				background-color: $color-gris-secundario;
+				padding: 10px;
+				border-radius: 100%;
+				color: $color-blanco;
+			}
+		}
 }
 .navbar-form{
 	width: 70%;
+	padding: 0;
 }
+.dropdown-toggle{
+	background-color:#ddd;
+	padding-bottom: 5px;
+	margin: 0;
+	margin-top: 8px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: 1px solid #ccc;
+}
+
+/*Nav input search*/
+.center-block {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-group .icon-addon .form-control {
+    border-radius: 0;
+}
+
+.icon-addon {
+    position: relative;
+    color: #555;
+    display: block;
+	height: 0;
+}
+
+.icon-addon:after,
+.icon-addon:before {
+    display: table;
+    content: " ";
+}
+
+.icon-addon:after {
+    clear: both;
+}
+
+.icon-addon.addon-md .glyphicon,
+.icon-addon .glyphicon, 
+.icon-addon.addon-md .fa,
+.icon-addon .fa {
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+    font-size: 14px;
+    width: 20px;
+    margin-left: -2.5px;
+    text-align: center;
+    padding: 10px 0;
+    top: 1px;
+    color: $color-text;
+}
+
+.icon-addon.addon-md .form-control,
+.icon-addon .form-control {
+    padding-left: 30px;
+    float: left;
+    font-weight: normal;
+    background-color: #ddd;
+    width: 100%;
+    border-radius: 0;
+    border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+.navbar-form .form-group {
+    width: 100% !important;
+}
+
+/*Galeria*/
 .cont-img{
 	column-width: 250px;
   	column-gap: 30px;
@@ -127,55 +215,3 @@ body{
 	}
 }
 
-
-.center-block {
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.input-group .icon-addon .form-control {
-    border-radius: 0;
-}
-
-.icon-addon {
-    position: relative;
-    color: #555;
-    display: block;
-	height: 0;
-}
-
-.icon-addon:after,
-.icon-addon:before {
-    display: table;
-    content: " ";
-}
-
-.icon-addon:after {
-    clear: both;
-}
-
-.icon-addon.addon-md .glyphicon,
-.icon-addon .glyphicon, 
-.icon-addon.addon-md .fa,
-.icon-addon .fa {
-    position: absolute;
-    z-index: 2;
-    left: 10px;
-    font-size: 14px;
-    width: 20px;
-    margin-left: -2.5px;
-    text-align: center;
-    padding: 10px 0;
-    top: 1px;
-    color: $color-text;
-}
-
-.icon-addon.addon-md .form-control,
-.icon-addon .form-control {
-    padding-left: 30px;
-    float: left;
-    font-weight: normal;
-    background-color: #ddd;
-    width: 100%;
-}
