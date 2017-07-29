@@ -1,6 +1,7 @@
 body{
 	margin: 0;
 	padding: 0;
+	color: $color-text;
 }
 .cont-img{
 	column-width: 250px;
@@ -26,14 +27,87 @@ body{
 		}
 		p{
 			font-size: 12px;
+			margin: 0;
+			padding: 0;
+		}
+		h6{
+			@include user-profile();
+			padding: 8px 9px;
 		}
 		h4{
 			font-size: 12px;
 			display: inline-block;
 		}
 		a{
-			display: inline-block;
+			@include hashtag();
+			font-size: 11px;
 		}
 	}
+}
+.modal-content{
+	padding: 0 20px;
+	.modal-header{
+		border-bottom: none;
+		padding-bottom: 0;
+		.fa-thumb-tack{
+				padding: 0;
+		}
+	}
+	.modal-body{
+		padding-top: 0;
+		.iconos{
+			padding: 10px 0;
+			.fa-thumb-tack{
+				padding: 0;
+			}
+		}
+	}
+	img{
+		width: 100%;
+	}
+	h1{
+		padding: 8px 0;
+		margin: 0;
+		font-size: 25px;
+		font-weight: bold;
+	}
+	h6{
+		@include user-profile();
+		padding: 8px 13px;
+		font-size: 30px;
+		font-weight: bold;
+	}
+	h4{
+		display: inline-block;
+	}
+	a{
+		@include hashtag();
+		font-size: 14px
+	}
+	p{
+		color: $color-gris;
+	}
+	i{
+		color: $color-gris-secundario; 
+		padding: 0 10px;
+		font-size: 20px;
+	}
+	.btn-save{
+		float: right;
+		background-color: $color-rojo-btn;
+		color: $color-blanco;
+		border: none;
+		i{
+			color: $color-blanco;
+			font-size: 15px;
+		}
+	}
+	.btn-read{
+		position: absolute;
+		right: 15px;
+		bottom: 85px;
+		background-color: #ddd;
+		border: none;
 
+	}
 }

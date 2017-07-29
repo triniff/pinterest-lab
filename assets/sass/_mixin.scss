@@ -1,0 +1,12 @@
+@mixin user-profile(){
+	display: inline-block;
+	background-color: $color-icono-user;
+	color: $color-blanco;
+	border-radius: 100px;
+	margin-right: 10px;
+}
+@mixin hashtag(){
+	display: inline-block;
+	color: $color-gris;
+	margin-left: 10px;
+}
