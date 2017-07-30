@@ -15,21 +15,27 @@ body{
 	.inicio{
 		font-weight: bold;
 	}
-		li a{
+	.input-icons{
+		.dropdown a{
 			padding: 8px 10px 4px;
 		}
 		.icons-nav{
+			li a{
+				padding: 15px 5px;
+				.fa-commenting{
+					background-color: $color-gris-secundario;
+					padding:10px;
+					border-radius: 100%;
+					color: $color-blanco;
+					margin-top: -10px;
+				}
+			}
 			img{
 				width: 25px;
 				border-radius: 100%;
 			}
-			.fa-commenting{
-				background-color: $color-gris-secundario;
-				padding: 10px;
-				border-radius: 100%;
-				color: $color-blanco;
-			}
 		}
+	}		
 }
 .navbar-form{
 	width: 70%;
@@ -211,7 +217,13 @@ body{
 		bottom: 85px;
 		background-color: #ddd;
 		border: none;
-
+	}
+	.btn-read:hover{
+		background-color: $color-gris-secundario;
+		color: $color-blanco;
+	}
+	.btn-save:hover{
+		background-color: #BD4759;
 	}
 }
 
